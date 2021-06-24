@@ -1,0 +1,9 @@
+@import url(~bootstrap/dist/css/bootstrap.css);
+@import url(~@fortawesome/fontawesome-free/css/all.css);
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  font-size: 14px;
+}
