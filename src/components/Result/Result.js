@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
 import _ from 'lodash';
 import ReactPaginate from 'react-paginate';
 
@@ -11,7 +10,6 @@ import './styles.css';
 
 export const Result = () => {
   const dispatch = useDispatch();
-  const history = useHistory();
 
   const { loginData, totalCount, searchKey, error } = useSelector((state) => state.search);
   const [userData, setUserData] = useState([]);
@@ -26,6 +24,7 @@ export const Result = () => {
   const closeError = () => {
     dispatch({ type: CONSTS.GET_DATA_ERROR, payload: '' });
   };
+
   useEffect(() => {
     const orderedArray = _.sortBy(loginData, (o) => o.login);
     setUserData(orderedArray);
