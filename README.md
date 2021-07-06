@@ -1,4 +1,4 @@
-# Web - ReactJS Test Assignment
+# ReactJS + Github
 
 ## Overview
 
